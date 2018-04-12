@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dc8b8b">
+    <TextView
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/textSua"
+        android:textColor="#6b4848"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Sửa Ghi Chú"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Nhập ghi chú mới"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textSua"
+        android:id="@+id/editTextTenCVEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTenCVEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_marginLeft="30dp"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonEdit"
+        android:layout_alignBottom="@+id/buttonEdit"
+        android:layout_toRightOf="@+id/buttonEdit"
+        android:layout_toEndOf="@+id/buttonEdit" />
+</RelativeLayout>
